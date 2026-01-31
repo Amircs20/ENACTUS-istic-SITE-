@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Recrutement - Enactus ISTIC</title>
+    <style>
+        :root { 
+            --enactus-yellow: #ffc107; 
+            --dark-bg: #121212;
+            --input-bg: #1e1e1e;
+        }
+
+        body { 
+            background-color: var(--dark-bg);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar Style */
+        .logo-nav { width: 50px; height: 50px; object-fit: cover; border: 2px solid white; }
+        .nav-link-custom {
+            color: #000 !important;
+            transition: 0.3s;
+        }
+        .nav-link-custom:hover { opacity: 0.7; }
+
+        /* Form styling */
+        .form-control, .form-select {
+            background-color: var(--input-bg) !important;
+            border: 1px solid #333 !important;
+            color: white !important;
+            padding: 12px;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--enactus-yellow) !important;
+            box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+            outline: none;
+        }
+        .form-label {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        /* Image styling */
+        .img-container {
+            position: relative;
+            padding: 20px;
+        }
+        .img-recrutement {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            border: 1px solid #444;
+        }
+        .yellow-decoration {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--enactus-yellow);
+            z-index: -1;
+            border-radius: 20px;
+            opacity: 0.5;
+        }
+
+        .btn-enactus {
+            background-color: var(--enactus-yellow);
+            color: black;
+            font-weight: 800;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            text-transform: uppercase;
+            transition: 0.4s;
+        }
+        .btn-enactus:hover {
+            background-color: white;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <nav class="container-fluid bg-warning p-2 shadow-sm">
+        <div class="row g-0 align-items-center">
+            <div class="col-2 col-md-1 text-center">
+                <img src="logo.jpg" alt="enactus" class="rounded-circle logo-nav">
+            </div>
+            <div class="col-10 col-md-11 d-flex justify-content-center">
+                <a href="#" class="nav-link-custom fw-bold text-decoration-none mx-3">HOME</a>
+                <a href="#" class="nav-link-custom fw-bold text-decoration-none mx-3">EVENTS</a>
+                <a href="#" class="nav-link-custom fw-bold text-decoration-none mx-3">ABOUT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6">
+                <div class="mb-4">
+                    <h1 class="fw-bold">BE THE <span class="text-warning">CHANGE.</span></h1>
+                    <p class="text-secondary">Rejoignez l'aventure de l'entrepreneuriat social à l'ISTIC.</p>
+                </div>
+
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-warning fw-bold">NOM</label>
+                            <input type="text" class="form-control" placeholder="Nom" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-warning fw-bold">PRENOM</label>
+                            <input type="text" class="form-control" placeholder="Prénom" required>
+                        </div>
+                        
+                        <div class="col-12 mb-3">
+                            <label class="form-label text-warning fw-bold">EMAIL</label>
+                            <input type="email" class="form-control" placeholder="email@istic.u-carthage.tn" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-warning fw-bold">NIVEAU D'ÉTUDE</label>
+                            <select class="form-select" required>
+                                <option selected disabled value="">Choisir...</option>
+                                <option>GLSI</option>
+                                <option>ISI</option>
+                                <option>LAII</option>
+                                <option>IT</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-warning fw-bold">TÉLÉPHONE</label>
+                            <input type="tel" class="form-control" placeholder="Numéro" required>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="form-label text-warning fw-bold">CAUSE SOCIALE PRIORITAIRE</label>
+                            <select class="form-select">
+                                <option>Éducation pour tous</option>
+                                <option>Protection de l'environnement</option>
+                                <option>Aide aux personnes précaires</option>
+                                <option>Innovation technologique sociale</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <label class="form-label text-warning fw-bold">QUELLE EST VOTRE MOTIVATION ?</label>
+                            <textarea class="form-control" rows="3" placeholder="Pourquoi voulez-vous devenir un Enacteur ?"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-enactus w-100 shadow">Envoyer ma Candidature</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="img-container">
+                    <img src="FAMILLY.jpg" alt="Enactus Family" class="img-recrutement">
+                    <div class="yellow-decoration"></div>
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
