@@ -1,217 +1,461 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <title>Enactus ISTIC</title>
+
     <style>
+
         /* Custom Styling */
+
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
         .logo-nav { width: 50px; height: 50px; object-fit: cover; }
-        
+
+       
+
         /* Team Card Styling */
+
         .team-card { transition: transform 0.3s; }
+
         .team-card:hover { transform: translateY(-10px); }
+
         .team-card img { height: 250px; object-fit: cover; object-position: top; }
-        
+
+       
+
         /* Event Card Styling */
+
         .event-card img { height: 200px; object-fit: cover; }
-        
+
+       
+
         /* Navbar tweaks */
+
         .nav-link { position: relative; }
+
         .nav-link::after {
+
             content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 0;
+
             background-color: #000; transition: width 0.3s;
+
         }
+
         .nav-link:hover::after { width: 100%; }
+
     </style>
+
 </head>
+
 <body class="bg-dark text-white">
 
+
+
 <nav class="navbar navbar-expand-md navbar-light bg-warning p-2 sticky-top shadow">
+
     <div class="container-fluid">
+
         <a class="navbar-brand" href="#">
+
             <img src="logo.jpg" alt="enactus" class="rounded-circle logo-nav border border-dark">
+
         </a>
 
+
+
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
+
+
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
             <ul class="navbar-nav align-items-center">
+
                 <li class="nav-item"><a href="#" class="nav-link text-dark fw-bold mx-3">HOME</a></li>
+
                 <li class="nav-item"><a href="#events" class="nav-link text-dark fw-bold mx-3">EVENTS</a></li>
+
                 <li class="nav-item"><a href="#about" class="nav-link text-dark fw-bold mx-3">ABOUT US</a></li>
+
             </ul>
+
         </div>
+
+
 
         <div class="d-none d-md-block">
+
             <a href="joinus.html" class="btn btn-outline-dark fw-bold rounded-pill px-4">JOIN US</a>
+
         </div>
+
     </div>
+
 </nav>
 
+
+
 <div class="container py-5 my-5" id="about">
+
     <div class="row align-items-center">
+
         <div class="col-md-6">
+
             <h5 class="text-warning text-uppercase ls-2">Who we are</h5>
+
             <h1 class="display-4 fw-bold mb-4">Entrepreneurial <span class="text-warning">Action</span> for Others</h1>
+
             <p class="lead text-light">
+
                 Enactus ISTIC est une organisation estudiantine engagée qui fait partie du réseau international Enactus, présent dans plus de 30 pays.
+
             </p>
+
             <p class="text-secondary">
+
                 Notre mission est de transformer les idées en actions concrètes en développant des projets entrepreneuriaux durables qui répondent à des problématiques sociales, économiques et environnementales.
+
             </p>
+
             <button class="btn btn-warning btn-lg mt-3 fw-bold rounded-pill">Our Projects</button>
+
         </div>
+
         <div class="col-md-6 text-center mt-4 mt-md-0">
+
             <img src="FAMILLY.jpg" alt="Team meeting" class="img-fluid rounded-4 shadow-lg border border-warning">
+
         </div>
+
     </div>
+
 </div>
+
+
 
 <div class="container my-5" id="events">
+
     <div class="text-center mb-5">
+
         <h2 class="text-warning border-bottom border-warning border-3 d-inline-block pb-2">LATEST EVENTS</h2>
+
     </div>
-    
+
+   
+
     <div class="row g-4">
         <div class="col-md-4">
+
             <div class="card bg-dark border border-secondary h-100 event-card text-white">
-                <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Event 1">
+
+                <img src="AFFICHE 4.JPG" class="card-img-top" alt="Event 2">
+
                 <div class="card-body">
-                    <h5 class="card-title text-warning">Team Building</h5>
-                    <p class="card-text small text-secondary">A day full of activities to strengthen the bonds between our new members.</p>
+
+                    <h5 class="card-title text-warning">PITCHING INTERN COMPETITION </h5>
+
+                    <p class="card-text small text-secondary">MEMBERS PICTHING ENTREPRISE CONCEPT </p>
+
                 </div>
+
             </div>
+
         </div>
+        
+        
+        
+
         <div class="col-md-4">
+
             <div class="card bg-dark border border-secondary h-100 event-card text-white">
-                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Event 2">
+
+                <img src="Affiche (1).png" class="card-img-top" alt="Event 1">
+
                 <div class="card-body">
-                    <h5 class="card-title text-warning">National Competition</h5>
-                    <p class="card-text small text-secondary">Presenting our project "GreenCycle" in front of the national jury.</p>
+
+                    <h5 class="card-title text-warning">FORUM ENTREPRISE</h5>
+
+                    <p class="card-text small text-secondary">FORUM ISTIC ENTREPRISE 3.0 </p>
+
                 </div>
+
             </div>
+
         </div>
+
+        
+
         <div class="col-md-4">
+
             <div class="card bg-dark border border-secondary h-100 event-card text-white">
-                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Event 3">
+
+                <img src="LAUNCH YOUR CAREER.jpg" class="card-img-top" alt="Event 3">
+
                 <div class="card-body">
-                    <h5 class="card-title text-warning">Innovation Workshop</h5>
-                    <p class="card-text small text-secondary">Learning design thinking methodologies with industry experts.</p>
+
+                    <h5 class="card-title text-warning">LAUNCH YOUR CAREER</h5>
+
+                    <p class="card-text small text-secondary">YOUR FIRST STEP INTO PROFESSIONEL WORLD</p>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
+
+
 
 <div class="container-fluid bg-black py-5">
+
     <div class="container text-center">
+
         <h2 class="text-warning mb-5">EXECUTIVE COMMITTEE 2025-2026</h2>
-        
-        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+
+       <div class="row ">
+
+        <img class="img-fluid  mt-5" src="background.jpg" >
+
+
+
+
+       </div>
+
+        <div id="teamCarousel" class="carousel slide mt-5 " data-bs-ride="carousel">
+
             <div class="carousel-inner">
-                
+
+               
+
                 <div class="carousel-item active">
+
                     <div class="row g-4 justify-content-center">
+
                         <div class="col-md-3 col-sm-6">
+
                             <div class="card bg-dark border-0 h-100 team-card shadow">
+
                                 <img src="amir.png" class="card-img-top" alt="Amir"> <div class="card-body text-center">
+
                                     <h5 class="text-warning fw-bold mb-0">TEAM LEADER</h5>
+
                                     <p class="text-white small mt-2">MOHAMED AMIR LAOUINI</p>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                         <div class="col-md-3 col-sm-6">
+
                             <div class="card bg-dark border-0 h-100 team-card shadow">
+
                                 <img src="ahd.png" class="card-img-top" alt="Ahd">
+
                                 <div class="card-body text-center">
+
                                     <h5 class="text-warning fw-bold mb-0">GEN. SEC</h5>
+
                                     <p class="text-white small mt-2">AHD BOURAOUI</p>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                          <div class="col-md-3 col-sm-6">
+
                             <div class="card bg-dark border-0 h-100 team-card shadow">
-                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-img-top p-4" alt="Member">
+
+                                <img src="RAYEN.png" class="card-img-top " alt="Member">
+
                                 <div class="card-body text-center">
-                                    <h5 class="text-warning fw-bold mb-0">HR MANAGER</h5>
-                                    <p class="text-white small mt-2">MEMBER NAME</p>
+
+                                    <h5 class="text-warning fw-bold mb-0">VICE TEAM LEADER PROJECTS </h5>
+
+                                    <p class="text-white small mt-2">RAYEN HAFSI </p>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
+
 
                 <div class="carousel-item">
+
                     <div class="row g-4 justify-content-center">
+
                          <div class="col-md-3 col-sm-6">
+
                             <div class="card bg-dark border-0 h-100 team-card shadow">
-                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-img-top p-4" alt="Member">
+
+                                <img src="lina.png" class="card-img-top " alt="Member">
+
                                 <div class="card-body text-center">
-                                    <h5 class="text-warning fw-bold mb-0">PROJECT MANAGER</h5>
-                                    <p class="text-white small mt-2">MEMBER NAME</p>
+
+                                    <h5 class="text-warning fw-bold mb-0">VICE TEAM LEADER MARKETING</h5>
+
+                                    <p class="text-white small mt-2">LINA BANI</p>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                          <div class="col-md-3 col-sm-6">
+
                             <div class="card bg-dark border-0 h-100 team-card shadow">
-                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-img-top p-4" alt="Member">
+
+                                <img src="FATMA.png" class="card-img-top" alt="Member">
+
                                 <div class="card-body text-center">
-                                    <h5 class="text-warning fw-bold mb-0">TREASURER</h5>
-                                    <p class="text-white small mt-2">MEMBER NAME</p>
+
+                                    <h5 class="text-warning fw-bold mb-0">VICE TEAM LEADER FINANCE </h5>
+
+                                    <p class="text-white small mt-2">FATMA EZZAHRA AZZABI</p>
+
                                 </div>
+
                             </div>
+
+                        </div>
+ <div class="col-md-3 col-sm-6">
+
+                            <div class="card bg-dark border-0 h-100 team-card shadow">
+
+                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-img-top p-4" alt="Member">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="text-warning fw-bold mb-0">VICE TEAM LEADER RH </h5>
+
+                                    <p class="text-white small mt-2">WAEL TRABELSI  </p>
+
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
 
+
+
             </div>
+
+
 
             <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+
                 <span class="carousel-control-prev-icon bg-warning rounded-circle p-3" aria-hidden="true"></span>
+
                 <span class="visually-hidden">Previous</span>
+
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+
                 <span class="carousel-control-next-icon bg-warning rounded-circle p-3" aria-hidden="true"></span>
+
                 <span class="visually-hidden">Next</span>
+
             </button>
+
         </div>
+
     </div>
+
 </div>
 
+
+
 <footer class="bg-warning text-dark pt-5 pb-3 mt-5">
+
     <div class="container">
+
         <div class="row">
+
             <div class="col-md-4 mb-4">
+
                 <h5 class="fw-bold">Enactus ISTIC</h5>
+
                 <p class="small">Entrepreneurial action for a better world. Join us to make a difference.</p>
+
             </div>
+
             <div class="col-md-4 mb-4 text-center">
+
                 <h5 class="fw-bold">Follow Us</h5>
+
                 <div class="fs-4">
+
                     <i class="fab fa-facebook mx-2"></i>
+
                     <i class="fab fa-instagram mx-2"></i>
+
                     <i class="fab fa-linkedin mx-2"></i>
+
                 </div>
+
             </div>
+
             <div class="col-md-4 mb-4 text-end">
+
                 <h5 class="fw-bold">Contact</h5>
+
                 <p class="small mb-0">istic@enactus.tn</p>
+
                 <p class="small">Ariana, Tunisia</p>
+
             </div>
+
         </div>
+
         <hr class="border-dark">
+
         <div class="text-center small">
+
             &copy; 2026 Enactus ISTIC. All rights reserved.
+
         </div>
+
     </div>
+
 </footer>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
+
